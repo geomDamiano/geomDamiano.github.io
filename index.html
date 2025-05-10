@@ -1,7 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    <style>
+        /* Reset di alcuni stili di default */
+        body, h1, p, a {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Corpo della pagina */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Contenitore principale */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+        }
+
+        /* Hero Section */
+        .hero {
+            /*background-image: url('https://via.placeholder.com/1500x500'); /* Puoi sostituire con la tua immagine */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        /* Sezione Info */
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .info-box {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 30%;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .info-box h3 {
+            font-size: 1.8em;
+            color: #4CAF50;
+        }
+
+        .info-box p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsività */
+        @media (max-width: 768px) {
+            .info-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .info-box {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
 <body>
-<h1>Ciao!</h1>
-<p>Sono il geometra Damiano Marni. Contattami!</p>
+
+    <!-- Navbar -->
+    <nav>
+        <div>
+            <a href="#">Logo</a>
+        </div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Servizi</a>
+            <a href="#">Contatti</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Benvenuto nel nostro sito!</h1>
+            <p>Scopri i nostri servizi e contattaci per maggiori informazioni.</p>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section container">
+        <div class="info-box">
+            <h3>Servizio 1</h3>
+            <p>Descrizione del primo servizio che offriamo. Un servizio innovativo e utile.</p>
+        </div>
+        <div class="info-box">
+            <h3>Servizio 2</h3>
+            <p>Descrizione del secondo servizio che offriamo. Facile e veloce da usare.</p>
+        </div>
+        <div class="info-box">
+            <h3>Servizio 3</h3>
+            <p>Descrizione del terzo servizio. Ottieni risultati straordinari con noi.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 La tua Azienda. Tutti i diritti riservati. <a href="#">Privacy</a> | <a href="#">Termini</a></p>
+    </footer>
+
 </body>
 </html>
